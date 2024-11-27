@@ -6,6 +6,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import 'dayjs/locale/pt-br';
 import SignInSignUpImage from "@/components/SignInSignUpImage";
+import Link from "next/link";
 
 
 
@@ -78,7 +79,7 @@ export default function SignUp() {
                     <button onClick={handleSubmit} className="font-semibold mt-4 mb-2 w-[300px] h-[36px] rounded bg-sky-500 text-white">Cadastre-se</button>
                 </div>
                 <div>
-                    <p>Já possui uma conta? <a>Fazer Login</a></p>
+                    <p>Já possui uma conta? <Link href={'/signIn'}>Fazer Login</Link></p>
                 </div>
             </div>
             <div className="col-span-2 h-dvh w-auto mr-1 ml-64">
